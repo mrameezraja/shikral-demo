@@ -7,10 +7,10 @@ namespace Shikral.Demo.Web.Host.Startup
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            __BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args)
+        public static IWebHost __BuildWebHost(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
